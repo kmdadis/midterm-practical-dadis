@@ -144,4 +144,35 @@ button:hover {
 button:focus-visible {
   outline: 3px solid var(--color-accent);
   outline-offset: 3px;
+}@media (min-width: 700px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-medium);
+  }
+
+  #register {
+    grid-column: 1 / -1;
+  }
+
+  section {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-medium);
+  }
+
+  main {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  #register {
+    grid-column: auto;
+  }
 }
