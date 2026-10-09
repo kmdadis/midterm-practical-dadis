@@ -175,4 +175,23 @@ button:focus-visible {
   #register {
     grid-column: auto;
   }
+}.photo-grid {
+  display: grid;
+  gap: var(--space-medium);
+}
+
+figure {
+  margin: 0;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+figcaption {
+  margin-top: var(--space-small);
+  font-size: var(--type-small);
 }
